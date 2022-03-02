@@ -1,11 +1,11 @@
 #include <iostream>
-#include <random>
 
 #include "playGuessTheNumber.h"
+#include "random.h"
 
 int playGuessTheNumber()
 {
-    int numberToGuess = rand(0,100);
+    int numberToGuess = randint(0,100);
     bool isFinished = false;
     int guessCount = 0;
     std::cout << "Guess the number! 0 to 100 give it a try :\n";
@@ -25,24 +25,18 @@ int playGuessTheNumber()
     return 0;
 }
 
-int rand(int min, int max) {
-    static std::default_random_engine  generator{std::random_device{}()};
-    std::uniform_int_distribution<int> distribution{min, max};
-    return distribution(generator);
-}
-
 int getUserInput()
 {
     int userInput=0;
     bool isInputValid = false;
-    std::cout << "Enter a number :";
+    std::cout << "Enter a number : ";
     while(!isInputValid) {
         std::cin >> userInput;
         if(userInput>=0 && userInput<=100)
         {
             isInputValid=true;
         } else {
-            std::cout << "Enter a valid number :";
+            std::cout << "Enter a valid number : ";
         }
     }
     return userInput;
