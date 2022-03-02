@@ -1,6 +1,6 @@
-#include <iostream>
+#include "playGuessTheNumber.h"
 
 int main()
 {
-    std::cout << "Hello World\n";
+    playGuessTheNumber();
 }
