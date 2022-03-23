@@ -1,4 +1,6 @@
+#pragma once
+
 #include <random>
 
-int randint(int min, int max); // renvoie un entier aléatoire entre le min et le max donnés en paramètres 
+int randint(int min, int max); // return a random int between min and max 
 //int randword(); // renvoie un mot aléatoire
