@@ -4,12 +4,8 @@
 
 int main()
 {
+    std::cout<<"launch program:\n";
     //playGuessTheNumber();
-    std::cout<<"lancement programme: ";
-    if(isInWord('a',"abeille")){
-        std::cout<<"ça marche";
-    }else{
-        std::cout<<"ça marche pas";
-    };
-    //playHangman();
+    playHangman();
+    
 }

@@ -3,6 +3,12 @@
 #include "playGuessTheNumber.h"
 #include "random.h"
 
+///
+int getUserInput(); // ask an int to the player
+void giveHint(int userGuess, int numberToGuess); // give a hint for the next guess
+void endGame(int finalGuessCount); // end the game properly
+///
+
 int playGuessTheNumber()
 {
     int numberToGuess = randint(0,100);
