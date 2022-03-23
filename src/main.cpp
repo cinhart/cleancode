@@ -7,5 +7,4 @@ int main()
     std::cout<<"launch program:\n";
     //playGuessTheNumber();
     playHangman();
-    
 }

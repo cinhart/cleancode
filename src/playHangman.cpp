@@ -3,14 +3,24 @@
 #include <vector>
 
 #include "playHangman.h"
-//#include "random.h"
+#include "random.h"
 
+///
+std::string setCurrentWord(std::string wordToGuess); // set the initial display of the current word
 char getUserLetter(); // get a letter from the player
 bool isInWord(char character, std::string word); // check if a letter is in a word
 std::string refreshCurrentWord(char userGuess, std::string currentWord, std::string wordToGuess); // refresh current word with found letter
 bool isWordFound(std::string currentWord, std::string wordToGuess); // check if all letters have been found
 void endGame(bool isGameWon, int livesLeft); // end the game
-// char* randWord(); // renvoie un mot aléatoire
+///
+
+std::string setCurrentWord(std::string wordToGuess){
+    std::string currentWord;
+    for(std::string::size_type i = 0; i < wordToGuess.size(); i++){
+        currentWord+='_';
+    }
+    return currentWord;
+}
 
 char getUserLetter()
 {
@@ -52,8 +62,8 @@ void endGame(bool isGameWon, int livesLeft) {
 
 int playHangman()
 {
-    std::string wordToGuess = "idontknow"; // TO DO: Randword
-    std::string currentWord = "_________";
+    std::string wordToGuess = randword();
+    std::string currentWord = setCurrentWord(wordToGuess);
 
     int livesLeft = 8;
     bool isGameWon = false;
