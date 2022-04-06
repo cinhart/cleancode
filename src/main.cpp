@@ -6,11 +6,28 @@
 
 int main()
 {
-    std::cout<<"launch program:\n";
-    std::string menuResult = Menu();
-    if(menuResult=="1") {
-        playGuessTheNumber();
-    } else if(menuResult=="2") {
-        playHangman();
+    std::cout<<"launching program...\n";
+    bool playAgain=true;
+
+    while(playAgain){
+
+        int chosenGame = Menu();
+
+        switch (chosenGame)
+        {
+        case 1:
+            playGuessTheNumber();
+            break;
+
+        case 2:
+            playHangman();
+            break;
+        
+        default:
+            std::cout<<"\nSee you next time!\n\n";
+            playAgain = false;
+            break;
+        }
+
     }
 }
