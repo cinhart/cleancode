@@ -13,12 +13,10 @@ int randint(int min, int max) {
 std::vector<std::string> fileIntoArray(std::string path) {
     std::vector<std::string> outputArray;
     std::string line;
-
     std::ifstream file(path);
 
     if(!file.fail()){
         while(std::getline(file, line)){
-        //std::cout << line << "\n";
         outputArray.push_back(line);
         }       
     }
