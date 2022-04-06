@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/bin/Debug/Main.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "externalTerminal"
         }

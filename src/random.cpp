@@ -18,7 +18,7 @@ std::vector<std::string> fileIntoArray(std::string path) {
 
     if(!file.fail()){
         while(std::getline(file, line)){
-        std::cout << line << "\n";
+        //std::cout << line << "\n";
         outputArray.push_back(line);
         }       
     }
@@ -34,6 +34,6 @@ std::vector<std::string> fileIntoArray(std::string path) {
 }
 
 std::string randword() {
-    std::vector<std::string> wordList = fileIntoArray("./assets/wordList.txt");
+    std::vector<std::string> wordList = fileIntoArray("assets/wordList.txt");
     return wordList[randint(0, wordList.size()-1)];
 }

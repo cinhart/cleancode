@@ -8,7 +8,7 @@
 /*
 TO DO : 
 - take into account uppercase letters <--
-- fix file reading in randword <--
+- add new wordLists files
 - number of guesses depending on the word to guess
 - only one guess per letter
 - display hangman
