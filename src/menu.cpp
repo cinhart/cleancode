@@ -20,11 +20,12 @@ int Menu(){
 void listCommands() {
     std::cout << "1 : Guess the Number! \n";
     std::cout << "2 : Play Hangman! \n";
+    std::cout << "3 : Noughts and Crosses! \n";
     std::cout << "Q : Stop playing... \n";
 }
 
 bool isInputValid(char input) {
-    if(input=='1' || input=='2' || input=='Q'){
+    if(input=='1' || input=='2' || input=='3' || input=='Q'){
         return true;
     }
     std::cout<<"Please return one of the above\n";

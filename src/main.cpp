@@ -1,5 +1,6 @@
 #include "playGuessTheNumber.h"
 #include "playHangman.h"
+#include "playNoughtsAndCrosses"
 #include "menu.h"
 #include <iostream>
 #include <string>
@@ -21,6 +22,10 @@ int main()
 
         case 2:
             playHangman();
+            break;
+
+        case 3:
+            playNoughtsAndCrosses();
             break;
         
         default:
