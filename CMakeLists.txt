@@ -5,11 +5,11 @@ add_executable(${PROJECT_NAME})
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
 # Enable many good warnings
-if (MSVC)
-    target_compile_options(${PROJECT_NAME} PRIVATE /WX /W3)
-else()
-    target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors)
-endif()
+# if (MSVC)
+#     target_compile_options(${PROJECT_NAME} PRIVATE /WX /W3)
+# else()
+#     target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors)
+# endif()
 
 # Set the folder where the executable is created
 set_target_properties(${PROJECT_NAME} PROPERTIES
