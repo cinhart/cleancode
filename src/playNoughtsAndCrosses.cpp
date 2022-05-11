@@ -18,15 +18,16 @@ void draw_board(int size, p6::Context& ctx)
     }
 }
 
-void initializeWindow() {
+p6::Context initializeWindow() {
     auto ctx = p6::Context{{800, 800, "Noughts and Crosses"}};
     ctx.background({0.f, 0.f, 0.f});
     draw_board(3, ctx);
     ctx.start(); 
+    return ctx;
 }
 
 int playNoughtsAndCrosses() {
     std::cout<<"Noughts and crosses let's go!"<<std::endl;
-    initializeWindow();
+    auto ctx = initializeWindow();
     return 0;
 }
