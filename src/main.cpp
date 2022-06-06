@@ -27,7 +27,6 @@ int main()
 
         case 3:
             playNoughtsAndCrosses();
-            playAgain = false;
             break;
         
         default:

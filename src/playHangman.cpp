@@ -5,15 +5,6 @@
 #include "playHangman.h"
 #include "random.h"
 
-/*
-TO DO : 
-- take into account uppercase letters <--
-- add new wordLists files
-- number of guesses depending on the word to guess
-- only one guess per letter
-- display hangman
-*/
-
 ///
 std::string setCurrentWord(std::string wordToGuess); // set the initial display of the current word
 char getUserLetter(); // get a letter from the player

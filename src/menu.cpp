@@ -2,11 +2,6 @@
 
 #include <iostream>
 
-/*
-TO DO:
-- better check of user input (template maybe ?)
-*/
-
 void listGames();
 void listCommands();
 int getUserChoice();
