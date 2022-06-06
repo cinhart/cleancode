@@ -28,7 +28,7 @@ Lesson 2:
 - DRY: Don't repeat yourself :heavy_check_mark:
 - Enums :heavy_check_mark:
 - Split problems in small pieces :heavy_check_mark:
-- Composition over Inheritance :heavy_check_mark:
+- Composition over Inheritance
 
 Lesson 3:
 - std::vector :heavy_check_mark:

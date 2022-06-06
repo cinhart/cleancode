@@ -5,14 +5,12 @@
 #include "playHangman.h"
 #include "random.h"
 
-///
 std::string setCurrentWord(std::string wordToGuess); // set the initial display of the current word
 char getUserLetter(); // get a letter from the player
 bool isInWord(char character, std::string word); // check if a letter is in a word
 std::string refreshCurrentWord(char userGuess, std::string currentWord, std::string wordToGuess); // refresh current word with found letter
 bool isWordFound(std::string currentWord, std::string wordToGuess); // check if all letters have been found
 void endGame(bool isGameWon, int livesLeft); // end the game
-///
 
 std::string setCurrentWord(std::string wordToGuess){
     std::string currentWord;
@@ -72,6 +70,7 @@ int playHangman()
     {
 
         std::cout << currentWord << std::endl;
+        std::cout << "You have " << livesLeft << " wrong guesses left" << std::endl;
 
         char userGuess = getUserLetter();
 
